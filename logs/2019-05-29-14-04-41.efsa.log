@@ -1,0 +1,28 @@
+2019-05-29 14:04:22,931 ERROR c.CatalogueDAO [main] DB error
+java.sql.SQLException: Database 'Interpreting_Tool\Database\MAIN_CATS_DB' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_111]
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[?:1.8.0_111]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[?:1.8.0_111]
+	at catalogue_browser_dao.DatabaseManager.getMainDBConnection(DatabaseManager.java:107) ~[classes/:?]
+	at catalogue_browser_dao.CatalogueDAO.getLastVersionByCode(CatalogueDAO.java:454) [classes/:?]
+	at main.Decoder.<init>(Decoder.java:28) [classes/:?]
+	at main.ICT_UI.createContents(ICT_UI.java:126) [classes/:?]
+	at main.ICT_UI.open(ICT_UI.java:71) [classes/:?]
+	at main.ICT_UI.main(ICT_UI.java:60) [classes/:?]
+Caused by: org.apache.derby.iapi.error.StandardException: Database 'Interpreting_Tool\Database\MAIN_CATS_DB' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source) ~[derby-10.14.2.0.jar:?]
+	... 22 more

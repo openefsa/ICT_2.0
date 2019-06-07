@@ -1,0 +1,26 @@
+2019-05-30 11:27:30,133 ERROR b.TermRules [main] business-rules\BR_Data.csv not found or parsing errors.
+java.io.FileNotFoundException: business-rules\BR_Data.csv (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_111]
+	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_111]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_111]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_111]
+	at java.io.FileReader.<init>(Unknown Source) ~[?:1.8.0_111]
+	at business_rules.TermRules.loadForbiddenProcesses(TermRules.java:1065) [classes/:?]
+	at main.Decoder.loadFileData(Decoder.java:77) [classes/:?]
+	at main.Decoder.<init>(Decoder.java:48) [classes/:?]
+	at main.ICT_UI.createContents(ICT_UI.java:141) [classes/:?]
+	at main.ICT_UI.open(ICT_UI.java:76) [classes/:?]
+	at main.ICT_UI.main(ICT_UI.java:64) [classes/:?]
+2019-05-30 11:27:30,146 ERROR b.TermRules [main] business-rules\warningMessages.txt not found.
+java.io.FileNotFoundException: business-rules\warningMessages.txt (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_111]
+	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_111]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_111]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_111]
+	at java.io.FileReader.<init>(Unknown Source) ~[?:1.8.0_111]
+	at business_rules.TermRules.loadWarningMessages(TermRules.java:1144) [classes/:?]
+	at main.Decoder.loadFileData(Decoder.java:78) [classes/:?]
+	at main.Decoder.<init>(Decoder.java:48) [classes/:?]
+	at main.ICT_UI.createContents(ICT_UI.java:141) [classes/:?]
+	at main.ICT_UI.open(ICT_UI.java:76) [classes/:?]
+	at main.ICT_UI.main(ICT_UI.java:64) [classes/:?]
