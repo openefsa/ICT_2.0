@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="test/java/" kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -11,16 +29,18 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/SQL statements executor"/>
-	<classpathentry kind="var" path="SWT_64"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/EFSA_Catalogue_browser"/>
-	<classpathentry kind="var" path="JFace"/>
-	<classpathentry kind="lib" path="D:/PortableApps/eclipse/plugins/org.eclipse.core.databinding_1.7.0.v20180827-2028.jar" sourcepath="D:/PortableApps/eclipse/plugins/org.eclipse.core.databinding_1.7.0.v20180827-2028.jar"/>
-	<classpathentry kind="lib" path="D:/PortableApps/eclipse/plugins/org.eclipse.core.databinding.beans_1.4.200.v20180827-2028.jar" sourcepath="D:/PortableApps/eclipse/plugins/org.eclipse.core.databinding.beans_1.4.200.v20180827-2028.jar"/>
-	<classpathentry kind="lib" path="D:/PortableApps/eclipse/plugins/org.eclipse.core.databinding.observable_1.6.300.v20180827-2028.jar" sourcepath="D:/PortableApps/eclipse/plugins/org.eclipse.core.databinding.observable_1.6.300.v20180827-2028.jar"/>
-	<classpathentry kind="lib" path="D:/PortableApps/eclipse/plugins/org.eclipse.core.databinding.property_1.6.300.v20180827-2028.jar" sourcepath="D:/PortableApps/eclipse/plugins/org.eclipse.core.databinding.property_1.6.300.v20180827-2028.jar"/>
-	<classpathentry kind="lib" path="D:/PortableApps/eclipse/plugins/org.eclipse.jface.databinding_1.8.300.v20180828-0836.jar" sourcepath="D:/PortableApps/eclipse/plugins/org.eclipse.jface.databinding_1.8.300.v20180828-0836.jar"/>
-	<classpathentry kind="lib" path="D:/PortableApps/eclipse/plugins/org.eclipse.equinox.common_3.10.100.v20180827-1235.jar" sourcepath="D:/PortableApps/eclipse/plugins/org.eclipse.equinox.common_3.10.100.v20180827-1235.jar"/>
-	<classpathentry kind="lib" path="D:/PortableApps/eclipse/plugins/com.ibm.icu_62.1.0.v20180727-1652.jar" sourcepath="D:/PortableApps/eclipse/plugins/com.ibm.icu_62.1.0.v20180727-1652.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/catalogue-xml-to-xlsx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sql-script-executor"/>
+	<classpathentry kind="lib" path="D:/PortableApps/eclipse_Enterprise/plugins/org.eclipse.jface.databinding_1.9.0.v20190519-0933.jar"/>
+	<classpathentry kind="lib" path="D:/PortableApps/eclipse_Enterprise/plugins/org.eclipse.core.databinding.beans_1.5.0.v20190510-1100.jar"/>
+	<classpathentry kind="lib" path="D:/PortableApps/eclipse_Enterprise/plugins/org.eclipse.core.databinding.observable_1.7.0.v20190515-0910.jar"/>
+	<classpathentry kind="lib" path="D:/PortableApps/eclipse_Enterprise/plugins/org.eclipse.core.databinding.property_1.7.0.v20190510-1100.jar"/>
+	<classpathentry kind="lib" path="D:/PortableApps/eclipse_Enterprise/plugins/org.eclipse.core.databinding_1.7.400.v20190513-2118.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
